@@ -5,4 +5,10 @@ module.exports = function(app) {
 
     app.route('/')
         .get(myjson.index);
+
+    app.route('/getListMhs')
+        .get(myjson.getAllMhs);
+    
+    app.route('/getIdMhs/:id')
+        .get(myjson.getMhsById);
 }
