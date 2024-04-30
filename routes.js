@@ -11,4 +11,7 @@ module.exports = function(app) {
     
     app.route('/getIdMhs/:id')
         .get(myjson.getMhsById);
+
+    app.route('/addNewMhs')
+        .post(myjson.addMhs);
 }
